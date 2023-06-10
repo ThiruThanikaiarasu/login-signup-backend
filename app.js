@@ -5,6 +5,8 @@ const mongoose = require('mongoose')
 const PORT = 3500
 const signUp = require('./routes/signUpRoute')
 
+app.use(express.json())
+
 mongoose.connect(process.env.DB_URL)
 const db = mongoose.connection
 db.on("error", (error)=>{
