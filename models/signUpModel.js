@@ -20,12 +20,11 @@ const userSchema = new mongoose.Schema(
 
         password : {
             type : String,
-            required : true,
-
+            required : true
         }
     },
     {
-        collation : 'users'     // helps to main the same collection through out the project
+        collection : 'users'     // helps to main the same collection through out the project
     }
 )
 
